@@ -1,0 +1,19 @@
+{
+  "name": "scroll-react-hook",
+  "version": "1.0.0",
+  "description": "Hook for tracking the scroll position of an element or the window.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkcha1205/useScroll.git"
+  },
+  "author": "UTkarsh Chaturvedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utkcha1205/useScroll/issues"
+  },
+  "homepage": "https://github.com/utkcha1205/useScroll#readme"
+}

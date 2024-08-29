@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Treasure+Map+Dead+Hand&display=swap');
+
+.education {
+  margin-top: 110px;
+  padding: 50px 20px;
+  border-radius: 30vw 4vw 80vw 50vw ;
+  box-shadow: inset 0 0 12px 4px rgba(0, 0, 0, 0.8);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.education.night {
+  background: linear-gradient(45deg, #2c3e50, #4ca1af);
+  color: #fff;
+}
+
+.education h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.map-container ,.container1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.location-button {
+  height: 100px;
+  width: 100px;
+  border: 0px;
+  border-radius: 50vw  ;
+  box-shadow: inset 0 0 50px 1px rgba(0, 0, 0, 0.8);
+  color: #000000;
+  cursor: pointer;
+  transition: background 0.3s;
+  animation: mover 2s infinite  alternate;
+  -webkit-animation: mover 2s infinite  alternate;
+  font-weight: 800;
+}
+
+.location-button:hover {
+  font-size: medium;
+}
+
+.education-card {
+  border-radius: 50vw  ;
+  border-radius: 2vw 4vw 4vw 2vw ; 
+  box-shadow: inset 0 0 50px 1px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  z-index: 55;
+}
+
+.education-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.education-card p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.card-image {
+  position: absolute;
+  width: 100px;
+  margin-top: -100px;
+}
+
+.container2{
+top: 100px;
+
+
+}
+.card2{
+  border: 0px ;
+  height: 300px;
+  width: 300px;
+  top: -400px;
+  right: -220px;
+  overflow-x: hidden;
+  position: relative;
+  border-radius: 50vw 50vw 50vw 50vw ;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+  box-shadow: inset 0 0 50px 1px rgba(0, 0, 0, 0.8);
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateX(-40px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-40px); }
+}
+
+
+
+iframe{
+  border-radius: 50px ;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.education.night .education-card {
+  background: rgba(51, 51, 51, 0.8);
+}
+
+
+
+@media (max-width: 768px) {
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .card-image {
+    width: 50px;
+  }
+}

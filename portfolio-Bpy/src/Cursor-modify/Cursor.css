@@ -1,0 +1,61 @@
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(75, 64, 64);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+    z-index: 10000;
+  }
+  
+  .custom-cursor::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background:rgb(113, 62, 62);
+    transform: translate(-50%, -50%);
+    animation: sparkle 2s infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      border-radius: 60%;
+      width: 20px;
+      height: 20px;
+      opacity: 0.5;
+    }
+    50% {
+      width: 25px;
+      height: 25px;
+      opacity: 0.5;
+    }
+  }
+  
+  body.night-mode .custom-cursor {
+    background-color: #00f7ff;
+  }
+  
+  body.night-mode .custom-cursor::after {
+    background: rgb(0, 170, 255);
+  }
+  
+  @media (max-width: 768px) {
+    .custom-cursor {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .custom-cursor::after {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  

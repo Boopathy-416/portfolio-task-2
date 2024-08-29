@@ -1,0 +1,14 @@
+.skills , li{
+    font-style: 12px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  li.active{
+    border-radius: 50px 24;
+    background-color: #955353;
+    box-shadow: rgba(163, 96, 122, 0.7) 0px 48px 10px 0.600px;
+    font: 2em sans-serif;
+  }

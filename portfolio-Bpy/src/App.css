@@ -1,0 +1,31 @@
+
+html {
+  scroll-behavior:smooth;
+
+}
+
+body {
+  margin: 0;
+  font-family:sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 10px;
+    font-family: 'Poppins';
+    
+  }
+}

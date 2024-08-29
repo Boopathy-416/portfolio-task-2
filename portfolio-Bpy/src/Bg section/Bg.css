@@ -1,0 +1,33 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -70;
+  background: linear-gradient(744deg,#1f102a,#c9c8cb 60%,#022022);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  transition: background 0.3s;
+}
+
+.background.night {
+  background: linear-gradient(270deg, #2c3e50, #4b79a1);
+  animation: gradientAnimation 5s ease infinite;
+  transition: background 0.3s;
+  z-index: -70;
+  position: fixed;}
+  
+ .background.night{
+ @keyframes gradientAnimation {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+}
